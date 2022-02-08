@@ -7,6 +7,26 @@
     <title>Home - laravel-primi-passi</title>
 </head>
 <body>
-    <h1>Ciao sono la home page</h1>
+
+    {{-- MAIN --}}
+    <main>
+
+        {{-- Title --}}
+        <h1>{{ $homeTitle }}</h1>
+        <h3>Lista dei ristoranti</h3>
+
+        {{-- Restaurant list --}}
+        <ul>
+            @forelse ($restaurants as $restaurant)
+                <li>
+                    <span>{{ $restaurant }}</span>
+                    <a href="https://www.google.it/" target="_blank">Vai al ristorante</a>
+                </li>
+            @empty
+                <p>Non ci sono ristoranti</p>
+            @endforelse
+        </ul>
+    </main>
+
 </body>
 </html>

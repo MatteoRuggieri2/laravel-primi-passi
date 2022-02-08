@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
-});
+
+    $data = [
+        'homeTitle' => 'Ciao sono la homepage',
+        'restaurants' => [
+            'La montagna in un piatto',
+            'In riva ammare',
+            'Mangia che ti passa'
+        ],
+    ];
+
+    return view('home', $data);
+})->name('home');
