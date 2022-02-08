@@ -8,6 +8,15 @@
 </head>
 <body>
 
+    <header>
+        <span>HEADER</span>
+        <ul>
+            <li><a href="{{ route('about') }}">CHI SIAMO</a></li>
+            <li><a href="{{ route('restaurants') }}">I NOSTRI RISTORANTI</a></li>
+            <li><a href="{{ route('socials') }}">SOCIAL</a></li>
+        </ul>
+    </header>
+
     {{-- MAIN --}}
     <main>
 

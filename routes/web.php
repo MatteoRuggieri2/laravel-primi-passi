@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// HOME
 Route::get('/', function () {
 
     $data = [
@@ -26,3 +27,24 @@ Route::get('/', function () {
 
     return view('home', $data);
 })->name('home');
+
+
+// CHI SIAMO
+Route::get('/about-us', function () {
+
+    return view('about');
+})->name('about');
+
+
+// I NOSTRI RISTORANTI
+Route::get('/our-restaurants', function () {
+
+    return view('restaurants');
+})->name('restaurants');
+
+
+// SOCIALS
+Route::get('/socials', function () {
+
+    return view('socials');
+})->name('socials');
