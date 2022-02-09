@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chi siamo - laravel-primi-passi</title>
+    <title>Socials - laravel-primi-passi</title>
 </head>
 <body>
     <h1>Seguici sui nostri social</h1>
